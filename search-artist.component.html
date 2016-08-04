@@ -1,0 +1,18 @@
+<div class="col s12">
+    <h5>Search for: {{ vm.artist }}</h5>
+
+    <div class="input-field col s6 l8">
+        <i class="material-icons prefix">account_circle</i>
+        <input  id="first_name" type="text" ng-model=vm.artist class="validate">
+        <label for="first_name">artist</label>
+    </div>
+
+    <div class="col s6 l4">
+        <a ng-click="vm.find(vm.artist)" class="waves-effect waves-light btn"><i class="material-icons right">cloud</i>get!</a>
+    </div>
+
+    <div class="col s12">
+        <pre>{{ vm.artist_data | json }}</pre>
+    </div>
+    
+</div>
